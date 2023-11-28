@@ -1,0 +1,25 @@
+index.html:
+O arquivo HTML define a estrutura da página.
+Inclui referência à folha de estilo (style.css) para fornecer o design.
+Contém campos de entrada para números, um seletor de operação, um botão para calcular e um parágrafo para exibir o resultado.
+
+style.css:
+Aplica estilos para dar uma aparência mais elaborada à calculadora.
+Usa flexbox para alinhar os elementos no centro da tela.
+Adiciona estilos para os campos de entrada, seletor de operações, botão e resultado.
+
+script.js:
+Contém a lógica JavaScript para realizar cálculos com base nos valores inseridos pelo usuário.
+A função calcular recebe os valores dos campos de entrada e realiza a operação selecionada.
+Exibe o resultado na página, não retornando um valor específico.
+
+Obtenção dos Valores:
+Pegamos o elemento num 1 e num 2 pelo ID e obtemos o valor do primeiro e segundo número 
+
+Utilizamos um bloco switch para determinar a operação selecionada e realizar o cálculo correspondente.
+
+document.getElementById('resultado').innerText = 'Resultado: ' + resultado;: Exibe o resultado na página, atualizando o conteúdo do elemento com o ID 'resultado'.
+
+A função calcular realiza cálculos com base nos valores inseridos pelo usuário.
+Obtém os valores dos campos de entrada, verifica se são numéricos e realiza a operação selecionada.
+Exibe o resultado na página.
