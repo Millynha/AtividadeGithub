@@ -9,4 +9,31 @@ function calcular() {
       alert('Por favor, insira números válidos.');
       return;
     }
-  
+    // Realizar a operação selecionada
+    var resultado;
+    switch (operador) {
+      case '+':
+        resultado = num1 + num2;
+        break;
+      case '-':
+        resultado = num1 - num2;
+        break;
+      case '*':
+        resultado = num1 * num2;
+        break;
+      case '/':
+        if (num2 !== 0) {
+          resultado = num1 / num2;
+        } else {
+          alert('Não é possível dividir por zero.');
+          return;
+        }
+        break;
+      default:
+        alert('Operação inválida.');
+        return;
+    }
+
+    // Exibir o resultado
+    document.getElementById('resultado').innerText = 'Resultado: ' + resultado;
+  }
